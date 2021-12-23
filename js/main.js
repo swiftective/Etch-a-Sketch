@@ -1,3 +1,5 @@
+let rangeSlider = document.querySelector("#myRange");
+let counter = document.querySelector("#counter");
 let divContainer = document.querySelector("#container");
 
 function createSketchPad(n) {
@@ -16,4 +18,10 @@ divPixel.forEach((data) => data.addEventListener("mouseover", colorHover));
 
 function colorHover(e) {
   e.target.style.background = "Red";
+}
+
+rangeSlider.oninput = counterUpdate;
+
+function counterUpdate(e) {
+  counter.innerText = e.target.value;
 }
