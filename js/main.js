@@ -11,7 +11,6 @@ function createSketchPad(n, m) {
 createSketchPad(16, 16);
 
 let divPixel = document.querySelectorAll(".pixel");
-console.log(divPixel);
 
 function colorHover(e) {
   e.target.style.background = "Red";
