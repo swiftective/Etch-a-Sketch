@@ -15,6 +15,7 @@ body {
   display: grid;
   grid-column-start: 1;
   grid-template-columns: repeat(16, 10px);
+  border: solid Orange 5px;
 }
 
 .pixel {
