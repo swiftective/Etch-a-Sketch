@@ -16,7 +16,7 @@ body {
   margin: 10px;
   grid-column-start: 1;
   grid-template-columns: repeat(16, 20px);
-  border: solid Orange 5px;
+  box-shadow: 0 0 5px white;
 }
 
 .pixel {
@@ -33,12 +33,27 @@ body {
   width: 2rem;
   height: 2rem;
   transform: scale(2);
-  transition: transform .5s;
   border: none;
   border-color: transparent;
   outline: none;
+  transition: transform 0.1s;
 }
 
 #favcolor:hover {
   transform: scale(2.2);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid White;
+  background: #121212;
+  color: White;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1.2em;
+  transition: transform 0.1s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }

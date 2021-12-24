@@ -28,11 +28,14 @@ function colorHover(e) {
 }
 
 let scaleCounter = document.querySelector("#counter");
-RANGE_SLIDER.oninput = (e) => {
-  scaleCounter.innerText = e.target.value;
+RANGE_SLIDER.onchange = (e) => {
   createSketchPad(e.target.value);
 };
 
-COLOR_INPUT_ELEMENT.oninput = (e) => {
+RANGE_SLIDER.oninput = (e) => {
+  scaleCounter.innerText = e.target.value;
+};
+
+COLOR_INPUT_ELEMENT.onchange = (e) => {
   COLOR_DEFAULT = e.target.value;
 };

@@ -17,11 +17,13 @@
         max="64"
         value="16"
         id="myRange"
+        autocomplete="off"
       />
       <label for="myRange" id="counter">16</label>
     </div>
     <div id="container"></div>
-      <label for="favcolor">Select your favorite color:</label>
-      <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+    <label for="favcolor">Select your paint color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+    <button type="button" class="btn" onclick="createSketchPad(RANGE_SLIDER.value)">CLEAR</button>
   </body>
 </html>
