@@ -15,22 +15,30 @@ body {
   display: grid;
   margin: 10px;
   grid-column-start: 1;
-  grid-template-columns: repeat(16, 10px);
+  grid-template-columns: repeat(16, 20px);
   border: solid Orange 5px;
 }
 
 .pixel {
   background: White;
-  width: 10px;
-  height: 10px;
-}
-
-input[type=range] {
-  font-size: 1rem;
-  /* appearance: none; */
 }
 
 #counter {
   font-size: 2rem;
   margin: 10px;
+}
+
+#favcolor {
+  margin: 20px;
+  width: 2rem;
+  height: 2rem;
+  transform: scale(2);
+  transition: transform .5s;
+  border: none;
+  border-color: transparent;
+  outline: none;
+}
+
+#favcolor:hover {
+  transform: scale(2.2);
 }
