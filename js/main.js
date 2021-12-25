@@ -17,8 +17,9 @@ function createPixel(num) {
   childNode.classList = 'pixel'
   childNode.style.width = `${SKETCH_BOARD_SIZE / num}px`
   childNode.style.height = `${SKETCH_BOARD_SIZE / num}px`
-  divContainer.style.gridTemplateColumns = `repeat(${num}, ${SKETCH_BOARD_SIZE / num
-    }px )`
+  divContainer.style.gridTemplateColumns = `repeat(${num}, ${
+    SKETCH_BOARD_SIZE / num
+  }px )`
   divContainer.appendChild(childNode)
 }
 
