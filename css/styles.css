@@ -13,9 +13,7 @@ body {
 
 #container {
   display: grid;
-  margin: 10px;
-  grid-column-start: 1;
-  grid-template-columns: repeat(16, 20px);
+  margin: 20px;
   box-shadow: 0 0 5px white;
 }
 
@@ -24,12 +22,19 @@ body {
 }
 
 #counter {
-  font-size: 2rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
   margin: 10px;
+  text-align: center;
+  border: 1px solid White;
 }
 
 #favcolor {
-  margin: 20px;
+  margin: 30px;
   width: 2rem;
   height: 2rem;
   transform: scale(2);
